@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShuShu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   </head>
+<body>
+
+    <div class="container disable">
+       <h2>Shu Editor</h2>
+       <div class="wrapper">
+        <div class="editor-ploca">
+            <div class="filter">
+               <label class="title">Filteri</label>
+               <div class="opcije">
+                <button id="brightness" class="active">Svjetlost</button>
+                <button id="saturation">Saturacija</button>
+                <button id="inversion">Inverzija</button>
+                <button id="grayscale">Siva nijansa</button>
+                <button id="blurs">Blur</button>
+                <button id="opacity">Prozirnost</button>
+               </div>
+               <div class="slider">
+                <div class="filter-info">
+                    <p class="ime">Svjetlost</p>
+                    <p class="vrijednost">100%</p>
+                </div>
+                <input type="range" value="100" min="0" max="200">
+               </div>
+            </div>
+            <br>
+           <div class="rotate">
+            <label class="title">Rotacija & Okret</label>
+            <div class="opcije">
+                <button id="left"><i class='bx bx-revision bx-flip-horizontal' ></i></button>
+                <button id="right"><i class='bx bx-revision' ></i></button>
+                <button id="horizontal"><i class='bx bx-reflect-vertical bx-flip-horizontal' ></i></button>
+                <button id="vertical"><i class='bx bx-reflect-vertical bx-rotate-90' ></i></button>
+               </div>
+           </div>
+        </div> 
+        <div class="preglednik-slike">
+            <img src="slike/izaberisliku.jpg" alt="preglednik-slike">
+        </div>
+    </div>
+    <div class="kontrole">
+        <button class="reset-filter">Resetuj filtere</button>
+        <div class="red">
+            <input type="file" class="file-input" accept="image/*" hidden>
+            <button class="izaberi-sliku">Izaberi sliku</button>
+            <button class="sacuvaj-sliku">Sacuvaj sliku</button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
