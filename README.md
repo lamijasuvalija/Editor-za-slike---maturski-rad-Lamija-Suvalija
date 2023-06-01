@@ -1,1 +1,1 @@
-## Nedostaje upustvo za pokretanje projekta
+Projekat se pokrece otvaranjem index.html dokumenta
